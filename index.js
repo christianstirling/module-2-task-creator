@@ -1478,118 +1478,187 @@ const handleTypes = {
 
 */
 
+// const inputArray = [
+//     {
+//         // This is the template for a force type that does not have any "attributes"
+//         name: "Task 1.1",
+//         handleType: "Key",
+//         modifiers: [],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     },
+//     {
+//         name: "Task 1.2",
+//         handleType: "Door Knob",
+//         modifiers: [],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 1.3",
+//         handleType: "Ridged Knob",
+//         modifiers: [],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     },
+//     {
+//         name: "Task 1.4",
+//         handleType: "Tap",
+//         modifiers: [],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 1.5",
+//         handleType: "Wing Nut",
+//         modifiers: [],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 2",
+//         handleType: "L-Shaped",
+//         modifiers: ["Counter-clockwise"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     },
+//     {
+//         name: "Task 3",
+//         handleType: "Jar Lid",
+//         modifiers: ["Knurled", "1.8 inch diameter"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 4",
+//         handleType: "Round Knob",
+//         modifiers: ["Smooth", "0.75 inch diameter"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 5.1",
+//         handleType: "Regular Screwdriver",
+//         modifiers: ["Clockwise", "Hand-shake (Neutral)"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     },
+//     {
+//         name: "Task 5.2",
+//         handleType: "Pistol Grip Screwdriver",
+//         modifiers: ["Counter-clockwise", "Palm-up (60 degrees Supinated)"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Left"
+//     },
+//     {
+//         name: "Task 6",
+//         handleType: "T-Handle",
+//         modifiers: ["Elbow Angle 90 degrees", "Clockwise", "Palm-down (75% Range of Motion)"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     },
+//     {
+//         name: "Task 7",
+//         handleType: "Cylindrical Handle",
+//         modifiers: ["Smooth", "Outward", "2.3 inch diameter"],
+//         forceCount: 1,
+//         forceMagnitude: 1,
+//         forceDuration: 1,
+//         hand: "Right"
+//     }
+// ];
+
+
 const inputArray = [
     {
-        // This is the template for a force type that does not have any "attributes"
-        name: "Task 1.1",
-        handleType: "Key",
-        modifiers: [],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
+        // This is the template for a handle type that does not have any "modifiers"
+        "Name": "Task One",
+        "Handle Type": "Key",
+        "Modifiers": [],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Right"
     },
     {
-        name: "Task 1.2",
-        handleType: "Door Knob",
-        modifiers: [],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 1.3",
-        handleType: "Ridged Knob",
-        modifiers: [],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
-    },
-    {
-        name: "Task 1.4",
-        handleType: "Tap",
-        modifiers: [],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 1.5",
-        handleType: "Wing Nut",
-        modifiers: [],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 2",
-        handleType: "L-Shaped",
-        modifiers: ["Counter-clockwise"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
-    },
-    {
-        name: "Task 3",
-        handleType: "Jar Lid",
-        modifiers: ["Knurled", "1.8 inch diameter"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 4",
-        handleType: "Round Knob",
-        modifiers: ["Smooth", "0.75 inch diameter"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 5.1",
-        handleType: "Regular Screwdriver",
-        modifiers: ["Clockwise", "Hand-shake (Neutral)"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
-    },
-    {
-        name: "Task 5.2",
-        handleType: "Pistol Grip Screwdriver",
-        modifiers: ["Counter-clockwise", "Palm-up (60 degrees Supinated)"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Left"
-    },
-    {
-        name: "Task 6",
-        handleType: "T-Handle",
-        modifiers: ["Elbow Angle 90 degrees", "Clockwise", "Palm-down (75% Range of Motion)"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
-    },
-    {
-        name: "Task 7",
-        handleType: "Cylindrical Handle",
-        modifiers: ["Smooth", "Outward", "2.3 inch diameter"],
-        forceCount: 1,
-        forceMagnitude: 1,
-        forceDuration: 1,
-        hand: "Right"
+        // This is the template for the L-Shaped handle type
+        "Name": "Task Two",
+        "Handle Type": "L-Shaped",
+        "Modifiers": ["Counter-clockwise"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Left"
+    },{
+        // This is the template for the Jar Lid handle type
+        "Name": "Task Three",
+        "Handle Type": "Jar Lid",
+        "Modifiers": ["Knurled", "2.6 inch diameter"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Right"
+    },{
+        // This is the template for the Round Knob handle type
+        "Name": "Task Four",
+        "Handle Type": "Round Knob",
+        "Modifiers": ["Smooth", "0.125 inch diameter"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Right"
+    },{
+        // This is the template for either of the two screwdriver handle types (regular / pistol grip)
+        "Name": "Task Five",
+        "Handle Type": "Regular Screwdriver",
+        "Modifiers": ["Clockwise", "Palm-up (60 degrees Supinated)"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Right"
+    },{
+        // This is the template for the T-Handle handle type
+        "Name": "Task Six",
+        "Handle Type": "T-Handle",
+        "Modifiers": ["Elbow Angle 135 degrees", "Counter-clockwise", "Hand-shake (Neutral)"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Right"
+    },{
+        // This is the template for the Cylindrical Handle handle type
+        "Name": "Task Seven",
+        "Handle Type": "Cylindrical Handle",
+        "Modifiers": ["Smooth", "Outward", "3.3 inch diameter"],
+        "Force Count": 1,
+        "Force Magnitude": 1,
+        "Force Duration": 1,
+        "Hand": "Left"
     }
-];
-
+    
+]
 /*  PART 2: createTasks FUNCTION
 
     The following section of code contains three functions:
@@ -1646,7 +1715,7 @@ function createTasks(input) {
         femaleMean = 0;
         femaleStdDev = 0;
         
-        findValues(handleTypes[input[i].handleType], input[i].handleType, input[i].modifiers, input[i].hand)
+        findValues(handleTypes[input[i]["Handle Type"]], input[i]["Handle Type"], input[i]["Modifiers"], input[i]["Hand"])
 
         if (maleMean === null || maleStdDev === null || femaleMean === null || femaleStdDev === null) {
             console.log("Could not calculate one of the mean or standard deviation values for task number " + (i+1) + ".")
@@ -1746,12 +1815,12 @@ function makeOutput(index, input, maleMean, maleStdDev, femaleMean, femaleStdDev
     let output = new Object();
 
     output.Task = (index + 1);
-    output.TaskName = input[index].name;
-    output.Hand = input[index].hand;
-    output.ForceType = input[index].handleType;
-    output.ForceMagnitude = input[index].forceMagnitude;
-    output.ForceCount = input[index].forceCount;
-    output.ForceDuration = input[index].forceDuration;
+    output.TaskName = input[index]["Name"];
+    output.Hand = input[index]["Hand"];
+    output.ForceType = input[index]["Handle Type"];
+    output.ForceMagnitude = input[index]["Force Magnitude"];
+    output.ForceCount = input[index]["Force Count"];
+    output.ForceDuration = input[index]["Force Duration"];
 
     output.MaleMean = maleMean;
     output.MaleStdDev = maleStdDev;
