@@ -1591,7 +1591,7 @@ const handleTypes = {
 // ];
 
 
-const inputArray = [
+const inputArr = [
     {
         // This is the template for a handle type that does not have any "modifiers"
         "Name": "Task One",
@@ -1659,6 +1659,28 @@ const inputArray = [
     }
     
 ]
+
+// console.log(inputArr)
+
+for (const obj in inputArr) {
+    // console.log(inputArr[obj])
+}
+
+/* */
+
+// let inputArray = new Array()
+
+
+// const inputArray = fetch("input.json")
+// .then(response => response.json())
+// .then(data => {
+//     return data
+// })
+
+// console.log(data)
+
+// console.log(inputArray)
+
 /*  PART 2: createTasks FUNCTION
 
     The following section of code contains three functions:
@@ -1701,6 +1723,7 @@ const inputArray = [
 
             This function returns an object for each 'task', which is pushed to the output array
             that is created in the transform function.
+
 
 */
 
@@ -1847,7 +1870,7 @@ let maleStdDev;
 let femaleMean;
 let femaleStdDev;
 
-const tasks = createTasks(inputArray);
+const tasks = createTasks(inputArr);
 
 /*  For my use only! Do not copy anything below this comment.
     The stuff below is purely for my use in testing the components above.
